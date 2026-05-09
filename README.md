@@ -1,14 +1,14 @@
 # Telematics Risk Intelligence Platform
 
-An end-to-end ML powered telematics insurance analytics platform built using Python, Plotly Dash, GLM, and GA2M/EBM models to simulate real-world commercial auto underwriting and pricing workflows.
+An end-to-end Telematics Risk Intelligence Platform built using Python, Plotly Dash, GLM, and GA2M/EBM models to simulate real-world commercial auto underwriting, risk scoring, pricing, and claims analytics workflows.
 
-The project combines synthetic telematics + claims data generation, actuarial pricing models, explainable AI, portfolio analytics, and interactive dashboards to help insurers make smarter underwriting, pricing, and risk management decisions.
+The demo combines telematics + claims data generation, actuarial pricing models, explainable AI, portfolio analytics, and interactive dashboards to help insurers make smarter underwriting, pricing, and risk management decisions.
 
 ---
 
 # Key Features
 
-- Synthetic commercial telematics insurance dataset generation (10,000 policies, 50+ features)
+- Commercial telematics insurance dataset generation (10,000 policies, 50+ features)
 - Exposure-adjusted actuarial frequency modeling using Logistic GLM
 - Severity modeling using GA2M / Explainable Boosting Machine (EBM)
 - Pure premium + indicated premium pricing logic
@@ -16,7 +16,7 @@ The project combines synthetic telematics + claims data generation, actuarial pr
 - Explainable AI risk decomposition
 - Portfolio loss concentration and claims analytics
 - Interactive Plotly Dash dashboard with 5 tabs
-- Industry-style underwriting segmentation and pricing workflows
+- Underwriting segmentation and pricing workflows
 
 ---
 
@@ -110,7 +110,7 @@ Telematics-Risk-Intelligence/
 
 # Modeling Workflow
 
-Synthetic Data Generation  
+Data Generation  
 ↓  
 EDA & Data Cleaning  
 ↓  
@@ -128,9 +128,4 @@ Risk Scoring & Explainability
 ↓  
 Interactive Plotly Dash Dashboard  
 
----
 
-# Installation
-
-```bash
-pip install -r requirements.txt
