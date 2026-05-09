@@ -1,0 +1,34 @@
+============================================================
+COMPARISON A — uw_risk_tier ABLATION
+============================================================
+uw_risk_tier is a monotone bucketing of operational_exposure_risk_index
+(OERI).  If OERI is present, the tier adds no independent predictive
+information.  This test quantifies the actual AUC difference.
+
+  ROC-AUC WITH    uw_risk_tier : 0.7377
+  ROC-AUC WITHOUT uw_risk_tier : 0.7345
+  Delta (W - WO)               : +0.0032
+
+  → Delta < 0.005: uw_risk_tier adds no meaningful predictive gain.
+    Recommendation: EXCLUDE from strict predictive models.
+    Keep for underwriting reporting / tier-based pricing only.
+    OERI alone is the better model input.
+
+============================================================
+COMPARISON B — policy_term_months PREDICTIVE VALUE TEST
+============================================================
+policy_term_months governs earned_exposure bounds (generator design).
+No direct causal path to claim probability exists.  Any correlation is
+a selection artefact.  This test checks whether it adds real predictive
+power or should remain an exposure/business-analysis variable only.
+
+  PI_mean (freq, val split) : 0.00000  ± 0.00059  (rank 47 of 60)
+  ROC-AUC WITH    ptm      : 0.7377
+  ROC-AUC WITHOUT ptm      : 0.7346
+  Delta (with - without)   : +0.0032
+
+  → AUC delta = 0.0032 (>=0.003): policy_term_months
+    contributes measurably to AUC.  This may reflect a genuine
+    selection effect (riskier fleets choosing shorter terms) or
+    data-generating artefact.  Include cautiously and re-evaluate
+    on real data before production use.

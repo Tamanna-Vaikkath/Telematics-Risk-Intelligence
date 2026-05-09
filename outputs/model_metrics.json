@@ -1,0 +1,27 @@
+{
+  "frequency": {
+    "AUC_ROC_CV": 0.7192,
+    "AUC_ROC_IS": 0.7336,
+    "PR_AUC_CV": 0.2954,
+    "Brier_CV": 0.0948,
+    "Gini_CV": 0.4384,
+    "LogLik": -3321.55,
+    "AIC": 6729.1,
+    "Pseudo_R2": 0.087791
+  },
+  "severity": {
+    "Model": "EBM_GA2M",
+    "MAE_log_CV": 0.8636,
+    "RMSE_log_CV": 1.2937,
+    "R2_log_CV": 0.1361,
+    "MAE_USD_IS": 90556.32
+  },
+  "sev_model_type": "EBM",
+  "pricing_config": {
+    "expense_loading_pct": 0.25,
+    "profit_loading_pct": 0.05,
+    "severity_cap_usd": 1500000.0,
+    "min_premium_usd": 500.0,
+    "n_predictions_capped": 0
+  }
+}
