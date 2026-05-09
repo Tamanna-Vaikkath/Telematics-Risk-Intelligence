@@ -75,8 +75,7 @@ Telematics-Risk-Intelligence/
 ├── requirements.txt  
 ├── README.md  
 
-├── config/  
-│   ├── config.yaml  
+├── config/    
 │   ├── pricing.json  
 │   └── feature_selection.json  
 
@@ -96,15 +95,12 @@ Telematics-Risk-Intelligence/
 │   ├── model_metrics.json  
 │   ├── calibration_freq.csv  
 │   └── lift_freq.csv  
-
-├── src/  
-│   ├── generate_data.py  
-│   ├── clean_data.py  
-│   ├── feature_engineering.py  
+ 
+│   ├── generate_dataset.py  
+│   ├── cleaning.py    
 │   ├── feature_selection.py  
-│   ├── train_model.py  
+│   ├── model_train.py  
 │   ├── risk_scoring.py  
-│   └── utils.py  
 
 ---
 
