@@ -1,0 +1,24 @@
+{
+  "tier_thresholds": {
+    "LOW": [
+      null,
+      1800
+    ],
+    "MODERATE": [
+      1800,
+      5500
+    ],
+    "HIGH": [
+      5500,
+      12000
+    ],
+    "VERY_HIGH": [
+      12000,
+      null
+    ]
+  },
+  "expense_loading_pct": 0.25,
+  "profit_loading_pct": 0.05,
+  "severity_cap_usd": 1500000,
+  "min_premium_usd": 500
+}

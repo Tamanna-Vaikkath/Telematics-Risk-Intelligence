@@ -1,0 +1,102 @@
+{
+  "final_freq_features": [
+    "adas_equipped_flag",
+    "aggression_index_per100mi",
+    "behavioral_drift_signal",
+    "bi_limit_usd",
+    "cargo_type",
+    "coverage_type",
+    "distraction_rate_per_trip",
+    "driver_tenure_days",
+    "fatigue_exposure_density",
+    "fatigue_x_longhaul_score",
+    "fleet_safety_program_flag",
+    "heavy_vehicle_flag",
+    "mvr_violations_3yr",
+    "new_driver_heavy_vehicle_multiplier",
+    "night_driving_pct",
+    "operating_pattern",
+    "operational_exposure_risk_index",
+    "prior_at_fault_claims",
+    "region_weather_risk",
+    "speed_x_night_severity_multiplier",
+    "speeding_rate_per100mi",
+    "state_of_domicile",
+    "vehicle_age_years",
+    "vehicle_type"
+  ],
+  "final_sev_features": [
+    "adas_equipped_flag",
+    "aggression_index_per100mi",
+    "behavioral_drift_signal",
+    "bi_limit_usd",
+    "cargo_type",
+    "cargo_value_usd",
+    "coverage_type",
+    "distraction_rate_per_trip",
+    "driver_tenure_days",
+    "fatigue_exposure_density",
+    "fatigue_x_longhaul_score",
+    "fleet_safety_program_flag",
+    "gvw_lbs",
+    "heavy_vehicle_flag",
+    "mvr_violations_3yr",
+    "new_driver_heavy_vehicle_multiplier",
+    "night_driving_pct",
+    "operating_pattern",
+    "operational_exposure_risk_index",
+    "prior_at_fault_claims",
+    "region_weather_risk",
+    "speed_x_night_severity_multiplier",
+    "speeding_events",
+    "speeding_rate_per100mi",
+    "state_of_domicile",
+    "vehicle_age_years",
+    "vehicle_type"
+  ],
+  "cat_cols_freq": [
+    "state_of_domicile",
+    "operating_pattern",
+    "vehicle_type",
+    "coverage_type",
+    "cargo_type",
+    "region_weather_risk"
+  ],
+  "cat_cols_sev": [
+    "state_of_domicile",
+    "operating_pattern",
+    "vehicle_type",
+    "coverage_type",
+    "cargo_type",
+    "region_weather_risk"
+  ],
+  "cat_cols_nominal": [
+    "state_of_domicile",
+    "operating_pattern",
+    "vehicle_type",
+    "coverage_type",
+    "cargo_type",
+    "region_weather_risk"
+  ],
+  "cat_cols_ordinal": [
+    "uw_risk_tier"
+  ],
+  "vif_dropped": [
+    "total_trips",
+    "harsh_braking_events",
+    "harsh_acceleration_events",
+    "max_continuous_driving_hrs",
+    "phone_distraction_events",
+    "tailgating_events",
+    "total_miles"
+  ],
+  "ablation_exclusions": [
+    "uw_risk_tier"
+  ],
+  "tier_recommendation": "EXCLUDE_FROM_MODELS",
+  "ptm_recommendation": "INCLUDE_WITH_CAUTION",
+  "best_params_freq": {
+    "max_depth": 15,
+    "min_samples_leaf": 50
+  }
+}
