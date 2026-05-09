@@ -1,0 +1,17 @@
+dash
+plotly
+pandas
+numpy
+scikit-learn
+statsmodels
+interpret
+xgboost
+lightgbm
+catboost
+scipy
+joblib
+pyyaml
+matplotlib
+seaborn
+waitress
+flask
